@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WEST HILL TRADING POST — Russ Snyder, welder &amp; teacher</title>
+<meta name="description" content="West Hill Trading Post is Russ Snyder. Twenty years a NYC seal welder, now teaching the trade in the high school classroom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=Oswald:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="header__bar">
+
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-collection">Collection <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--md" id="menu-collection">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="collection.html#bracelets">Bracelets</a></li>
+                <li><a href="collection.html#bandanas">Bandanas</a></li>
+                <li><a href="open-bench.html">The Open Bench</a></li>
+              </ul>
+              <div class="megamenu__feature">
+                <div class="media media--menu"></div>
+                <p class="megamenu__caption">Bracelets &amp; bandanas by Russ Snyder</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-about">About <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--sm" id="menu-about">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="about.html#makers">The Maker</a></li>
+                <li><a href="about.html#materials">Materials</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-care">Customer Care <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--sm" id="menu-care">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html#shipping">Shipping</a></li>
+                <li><a href="contact.html#returns">Returns</a></li>
+                <li><a href="contact.html#repairs">Repairs &amp; Care</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="logo" href="index.html" aria-label="West Hill Trading Post — home">
+      <span class="logo__line">WEST HILL<span class="logo__dot">:</span>TRADING POST</span>
+      <span class="logo__rule" aria-hidden="true"></span>
+      <span class="logo__social" aria-hidden="true">
+        <i class="sq"></i><i class="sq"></i><i class="sq"></i><i class="sq"></i>
+      </span>
+    </a>
+
+    <div class="utils">
+      <button class="utils__lang" type="button">EN</button>
+      <button class="utils__btn" type="button" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+      </button>
+      <a class="utils__btn" href="#" aria-label="Account">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.6-4 4.2-6 7.5-6s5.9 2 7.5 6"/></svg>
+      </a>
+      <a class="utils__btn" href="#" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l2.3 4.9 5.2.7-3.8 3.7.9 5.3-4.6-2.5-4.6 2.5.9-5.3L4.5 9.6l5.2-.7z"/></svg>
+      </a>
+      <a class="utils__btn" href="#" aria-label="Cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8h13l-1.2 12H6.7z"/><path d="M9 8V6.4A3 3 0 0 1 12 3.4a3 3 0 0 1 3 3V8"/></svg>
+      </a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- ============ MOBILE DRAWER ============ -->
+<div class="drawer" id="drawer" hidden>
+  <nav class="drawer__nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <details><summary>Collection</summary>
+      <a href="collection.html#bracelets">Bracelets</a>
+      <a href="collection.html#bandanas">Bandanas</a>
+      <a href="open-bench.html">The Open Bench</a>
+    </details>
+    <details><summary>About</summary>
+      <a href="about.html">Our Story</a>
+      <a href="about.html#makers">The Maker</a>
+      <a href="about.html#materials">Materials</a>
+    </details>
+    <details><summary>Customer Care</summary>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#shipping">Shipping</a>
+      <a href="contact.html#returns">Returns</a>
+    </details>
+  </nav>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO FILM ============ -->
+  <section class="hero" aria-label="Introduction">
+    <video
+      class="hero__video"
+      poster="images/hero-poster.jpg"
+      autoplay muted loop playsinline
+      preload="metadata"
+      aria-label="West Hill Trading Post title film">
+      <source src="video/hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero__scrim"></div>
+
+    <div class="hero__caption">
+      <h1 class="hero__kicker">Russ Snyder — welder &amp; teacher</h1>
+    </div>
+  </section>
+
+  <!-- ============ COLLECTION GRID ============ -->
+  <section class="section" id="collection">
+    <h2 class="section__title">Collection</h2>
+    <div class="grid grid--2">
+      <a class="tile" href="collection.html#bracelets" style="--img:url('images/cat-bracelets.jpg')"><span class="media"></span><span class="tile__label">Bracelets</span></a>
+      <a class="tile" href="collection.html#bandanas"  style="--img:url('images/cat-bandanas.jpg')"><span class="media"></span><span class="tile__label">Bandanas</span></a>
+    </div>
+  </section>
+
+  <!-- ============ WHAT WE ARE BUILDING ============ -->
+  <section class="mission" id="mission">
+    <p class="mission__eyebrow">What we are building</p>
+    <h2 class="mission__title">A trading post, not a marketplace</h2>
+    <p class="mission__text">
+      West Hill Trading Post is a small shop for work made by hand. It starts with
+      Russ Snyder's bracelets and bandanas, and it grows one maker at a time.
+    </p>
+    <p class="mission__text">
+      Every piece is made by the person whose name is on it, in numbers small enough
+      that somebody can stand behind each one. We would rather stay small and mean it
+      than get big and stop.
+    </p>
+    <a class="readmore readmore--center" href="open-bench.html"><span>Room for more hands</span></a>
+  </section>
+
+  <!-- ============ FOUR PILLARS ============ -->
+  <section class="section" id="soul">
+    <h2 class="section__title">Behind the work</h2>
+    <div class="grid grid--4 grid--tall">
+      <a class="tile" href="about.html#materials" style="--img:url('images/pillar-materials.jpg')"><span class="media"></span><span class="tile__label">Materials</span></a>
+      <a class="tile" href="about.html#makers"    style="--img:url('images/pillar-makers.jpg')"><span class="media"></span><span class="tile__label">The Maker</span></a>
+      <a class="tile" href="index.html#the-mark"  style="--img:url('images/pillar-marks.jpg')"><span class="media"></span><span class="tile__label">Marks</span></a>
+      <a class="tile" href="about.html#story"     style="--img:url('images/pillar-origins.jpg')"><span class="media"></span><span class="tile__label">Origins</span></a>
+    </div>
+  </section>
+
+  <!-- ============ THE MAKER ============ -->
+  <section class="maker" id="russ">
+    <figure class="maker__figure">
+      <picture>
+        <source srcset="images/russ-west-hill-original.webp" type="image/webp">
+        <img src="images/russ-west-hill-original.png"
+             alt="Illustrated portrait of Russ Snyder seated, holding his hat. A West Hill Original."
+             width="823" height="1200" loading="lazy" decoding="async">
+      </picture>
+    </figure>
+
+    <p class="eyebrow">Welder — Teacher</p>
+    <h2 class="maker__title">Russ Snyder</h2>
+    <p class="maker__text">
+      Russ Snyder spent 20 years as a NYC instructional seal welder before stepping
+      into the high school classroom to teach the trade that built his life. Raised
+      in New Jersey, Russ always knew he wanted to teach. Not because welding was his
+      only option, but because he wanted young people to understand that it could be
+      theirs.
+    </p>
+    <a class="readmore readmore--center" href="about.html"><span>Read more</span></a>
+  </section>
+
+  <!-- ============ THE MARK ============ -->
+  <section class="mark" id="the-mark" aria-labelledby="mark-title">
+    <p class="mark__eyebrow">The Mark</p>
+
+    <figure class="mark__figure">
+      <picture>
+        <source srcset="images/mark-medallion.webp" type="image/webp">
+        <img src="images/mark-medallion.png" alt="Struck brass West Hill Trading Post medallion with a nickel silver centre" width="320" height="320" loading="lazy" decoding="async">
+      </picture>
+    </figure>
+
+    <h2 class="mark__title" id="mark-title">Brass, copper, steel</h2>
+
+    <p class="mark__lede">
+      Struck from the same metals as the work. It goes on the card<br>
+      in the box, and the card brings you back here.
+    </p>
+
+    <dl class="mark__specs">
+      <div class="mark__row"><dt>Piece</dt><dd>Wide Rail</dd></div>
+      <div class="mark__row"><dt>Metals</dt><dd>Copper · Brass · Nickel silver</dd></div>
+      <div class="mark__row"><dt>Forged</dt><dd><time datetime="2026-01-14">14 January 2026</time></dd></div>
+      <div class="mark__row"><dt>Weight</dt><dd>46.3 g</dd></div>
+      <div class="mark__row"><dt>Finish</dt><dd>Hand-polished, unlacquered</dd></div>
+      <div class="mark__row"><dt>Smith</dt><dd>Snyder</dd></div>
+    </dl>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__col">
+      <h4 class="footer__title">Service</h4>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="open-bench.html">The Open Bench</a></li>
+        <li><a href="contact.html#shipping">Shipping &amp; Delivery</a></li>
+        <li><a href="contact.html#returns">Returns</a></li>
+        <li><a href="contact.html#repairs">Repairs &amp; Care</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Follow</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Country &amp; Currency</h4>
+      <div class="selects">
+        <label class="sr-only" for="country">Country</label>
+        <select id="country">
+          <option>United States (USD $)</option>
+          <option>Canada (CAD $)</option>
+          <option>United Kingdom (GBP £)</option>
+          <option>Germany (EUR €)</option>
+          <option>Japan (JPY ¥)</option>
+        </select>
+        <label class="sr-only" for="lang">Language</label>
+        <select id="lang">
+          <option>English</option>
+          <option>Deutsch</option>
+          <option>Français</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <p class="footer__legal">© <span id="year">2026</span> West Hill Trading Post. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

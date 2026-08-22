@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collection — WEST HILL TRADING POST</title>
+<meta name="description" content="Bracelets and bandanas by Russ Snyder, with room on the bench for more artisans. West Hill Trading Post.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" id="header">
+  <div class="header__bar">
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-collection">Collection <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--md" id="menu-collection">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="collection.html#bracelets">Bracelets</a></li>
+                <li><a href="collection.html#bandanas">Bandanas</a></li>
+                <li><a href="open-bench.html">The Open Bench</a></li>
+              </ul>
+              <div class="megamenu__feature">
+                <div class="media media--menu"></div>
+                <p class="megamenu__caption">Bracelets &amp; bandanas by Russ Snyder</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-about">About <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--sm" id="menu-about">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="about.html#makers">The Maker</a></li>
+                <li><a href="about.html#materials">Materials</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-care">Customer Care <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--sm" id="menu-care">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html#shipping">Shipping</a></li>
+                <li><a href="contact.html#returns">Returns</a></li>
+                <li><a href="contact.html#repairs">Repairs &amp; Care</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="logo" href="index.html" aria-label="West Hill Trading Post — home">
+      <span class="logo__line">WEST HILL<span class="logo__dot">:</span>TRADING POST</span>
+      <span class="logo__rule" aria-hidden="true"></span>
+      <span class="logo__social" aria-hidden="true"><i class="sq"></i><i class="sq"></i><i class="sq"></i><i class="sq"></i></span>
+    </a>
+
+    <div class="utils">
+      <button class="utils__lang" type="button">EN</button>
+      <button class="utils__btn" type="button" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+      <a class="utils__btn" href="#" aria-label="Account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.6-4 4.2-6 7.5-6s5.9 2 7.5 6"/></svg></a>
+      <a class="utils__btn" href="#" aria-label="Wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l2.3 4.9 5.2.7-3.8 3.7.9 5.3-4.6-2.5-4.6 2.5.9-5.3L4.5 9.6l5.2-.7z"/></svg></a>
+      <a class="utils__btn" href="#" aria-label="Cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8h13l-1.2 12H6.7z"/><path d="M9 8V6.4A3 3 0 0 1 12 3.4a3 3 0 0 1 3 3V8"/></svg></a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <nav class="drawer__nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <details><summary>Collection</summary>
+      <a href="collection.html#bracelets">Bracelets</a>
+      <a href="collection.html#bandanas">Bandanas</a>
+      <a href="open-bench.html">The Open Bench</a>
+    </details>
+    <details><summary>About</summary>
+      <a href="about.html">Our Story</a>
+      <a href="about.html#makers">The Maker</a>
+    </details>
+    <details><summary>Customer Care</summary>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#shipping">Shipping</a>
+    </details>
+  </nav>
+</div>
+
+<main id="main">
+
+  <section class="pagehead" style="--img:url('images/collection-head.jpg')">
+    <h1>Collection</h1>
+    <p>Two pieces by one maker, for now. Built to be used hard and kept a long time.</p>
+  </section>
+
+  <!-- BRACELETS -->
+  <section class="catrow" id="bracelets">
+    <div class="catrow__head"><h2>Bracelets</h2><span>Copper &middot; Brass &middot; Nickel silver</span></div>
+    <div class="catrow__intro">
+      <p>
+        Woven and forged by Russ, hand-polished and left unlacquered so the metal keeps
+        moving after it leaves the bench. Each one is struck with the mark.
+      </p>
+    </div>
+    <div class="soon">
+      <p class="soon__label">Listing soon</p>
+      <p class="soon__line">The first pieces are being photographed now.</p>
+      <a class="btn" href="mailto:russ@westhilltradingpost.com?subject=Bracelets">Ask what's available</a>
+    </div>
+  </section>
+
+  <!-- BANDANAS -->
+  <section class="catrow" id="bandanas">
+    <div class="catrow__head"><h2>Bandanas</h2><span>In stock &middot; ships from the bench</span></div>
+    <div class="catrow__intro">
+      <p>
+        Classic paisley, printed in short runs with the West Hill mark set into the
+        border. Two colourways. Made to be worn out, washed, and worn again.
+      </p>
+    </div>
+
+    <div class="grid grid--2 grid--products">
+      <article class="product product--static">
+        <span class="media" style="--img:url('images/bandana-black.jpg')"></span>
+        <span class="product__meta">
+          <span class="product__name">Paisley Bandana &mdash; Black</span>
+          <span class="product__price">In stock</span>
+        </span>
+      </article>
+
+      <article class="product product--static">
+        <span class="media" style="--img:url('images/bandana-red.jpg')"></span>
+        <span class="product__meta">
+          <span class="product__name">Paisley Bandana &mdash; Red</span>
+          <span class="product__price">In stock</span>
+        </span>
+      </article>
+    </div>
+
+    <div class="catrow__note">
+      <p>Held in stock and posted within two working days.</p>
+      <a class="btn" href="mailto:russ@westhilltradingpost.com?subject=Bandana%20order">Order a bandana</a>
+    </div>
+  </section>
+
+  <!-- MORE MAKERS -->
+  <section class="catrow" id="more">
+    <div class="catrow__head"><h2>More makers</h2><span>The Open Bench</span></div>
+    <div class="catrow__intro">
+      <p>
+        Two pieces by one maker is where this starts, not where it stops. We are
+        quietly looking for a small number of artisans to set up alongside Russ, each
+        keeping their own name and their own mark. If that is you, write to us.
+      </p>
+      <p><a class="readmore" href="open-bench.html"><span>How it works</span></a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__col">
+      <h4 class="footer__title">Service</h4>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="open-bench.html">The Open Bench</a></li>
+        <li><a href="contact.html#shipping">Shipping &amp; Delivery</a></li>
+        <li><a href="contact.html#returns">Returns</a></li>
+        <li><a href="contact.html#repairs">Repairs &amp; Care</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__title">Follow</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__title">Country &amp; Currency</h4>
+      <div class="selects">
+        <label class="sr-only" for="country">Country</label>
+        <select id="country">
+          <option>United States (USD $)</option>
+          <option>Canada (CAD $)</option>
+          <option>United Kingdom (GBP £)</option>
+          <option>Germany (EUR €)</option>
+        </select>
+        <label class="sr-only" for="lang">Language</label>
+        <select id="lang"><option>English</option><option>Deutsch</option><option>Français</option></select>
+      </div>
+    </div>
+  </div>
+  <p class="footer__legal">© <span id="year">2026</span> West Hill Trading Post. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
