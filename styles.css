@@ -1106,10 +1106,13 @@ h1,h2,h3,h4{
   padding:clamp(20px,3vw,44px);
 }
 .stage__video{
-  width:100%;
-  max-height:min(76vh,660px);
-  /* A phone clip is portrait; show the whole frame rather than cropping the
-     player out of it. The tonal panel behind carries the leftover space. */
+  /* The clip is a portrait phone frame. Leaving width/height auto lets the
+     element keep its own ratio and take its size from max-height, so the
+     picture fills the box instead of sitting in wide black pillars. Works
+     the same way if a landscape clip is dropped in later. */
+  width:auto;height:auto;
+  max-width:100%;
+  max-height:min(74vh,620px);
   object-fit:contain;
   background:var(--black);
 }
@@ -1159,5 +1162,5 @@ h1,h2,h3,h4{
 
 @media (max-width:900px){
   .stage{grid-template-columns:1fr}
-  .stage__video{max-height:64vh}
+  .stage__video{max-height:62vh}
 }
