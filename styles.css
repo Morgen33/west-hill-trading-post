@@ -1082,3 +1082,82 @@ h1,h2,h3,h4{
   .social--drawer .social__icon{width:38px;height:38px}
   .social--drawer .social__icon svg{width:19px;height:19px}
 }
+
+/* ==========================================================================
+   WORN ON STAGE
+   Split block: the clip on one side, the roll of names on the other. The
+   names carry the section, so they get the display face and a hairline
+   between each — a bill of lading, not a logo wall.
+   ========================================================================== */
+.stage{
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  align-items:stretch;
+  border-top:1px solid var(--grey-line);
+}
+
+.stage__media{
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:#0a0a0a;
+  padding:clamp(20px,3vw,44px);
+}
+.stage__video{
+  width:100%;
+  max-height:min(76vh,660px);
+  /* A phone clip is portrait; show the whole frame rather than cropping the
+     player out of it. The tonal panel behind carries the leftover space. */
+  object-fit:contain;
+  background:var(--black);
+}
+.stage__caption{
+  margin-top:14px;
+  font-family:var(--font-display);
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--grey);
+}
+
+.stage__body{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:clamp(18px,2.4vw,26px);
+  padding:clamp(40px,6vw,90px) clamp(24px,6vw,90px);
+  background:var(--grey-deep);
+}
+.stage__title{font-size:clamp(28px,3.4vw,44px)}
+.stage__text{
+  margin:0;
+  max-width:48ch;
+  font-size:15px;line-height:1.85;color:#d6d6d6;
+}
+
+.stage__group{display:grid;gap:2px}
+.stage__label{
+  margin:0 0 10px;
+  font-size:12px;letter-spacing:.16em;
+  color:var(--grey);
+}
+.stage__names{
+  margin:0;padding:0;list-style:none;
+  display:grid;
+}
+.stage__names li{
+  padding:13px 0;
+  border-bottom:1px solid var(--grey-line);
+  font-family:var(--font-display);
+  font-size:clamp(19px,2.1vw,27px);
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  line-height:1.1;
+}
+.stage__names li:first-child{border-top:1px solid var(--grey-line)}
+.stage__names--pending li{color:var(--grey)}
+
+@media (max-width:900px){
+  .stage{grid-template-columns:1fr}
+  .stage__video{max-height:64vh}
+}
