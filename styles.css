@@ -200,7 +200,6 @@ h1,h2,h3,h4{
   display:grid;
   justify-items:center;
   gap:5px;
-  padding-top:2px;
 }
 .logo__line{
   font-family:var(--font-display);
@@ -211,8 +210,6 @@ h1,h2,h3,h4{
 }
 .logo__dot{margin:0 .12em}
 .logo__rule{width:100%;height:1px;background:#fff}
-.logo__social{display:flex;gap:6px}
-.logo__social .sq{width:7px;height:7px;border:1px solid var(--grey)}
 
 /* ---- utilities ---- */
 .utils{
@@ -883,10 +880,10 @@ h1,h2,h3,h4{
   /* .nav is out of flow here, so the bar becomes logo | utilities */
   .header__bar{grid-template-columns:1fr auto;align-items:center;gap:12px}
 
-  .logo{justify-self:start}
+  .brand{justify-self:start}
   .logo__line{font-size:15px}
   .logo__rule{width:100%}
-  .logo__social{display:none}
+  .social--head{display:none}
 
   /* A 16:9 film cropped to fill a portrait screen loses ~74% of its width,
      which cuts the logotype in half. Show the whole frame instead and let the
@@ -954,4 +951,216 @@ h1,h2,h3,h4{
   font-weight:300;
   font-size:14px;
   color:#8f8880;
+}
+
+/* ==========================================================================
+   SOCIAL — shared marks
+   Stroke glyphs on the same 1px grey rule as the rest of the furniture, so a
+   platform icon reads as another struck plate rather than a brand badge.
+   ========================================================================== */
+.social__icon{
+  display:grid;place-items:center;
+  border:1px solid var(--grey-line);
+  color:var(--grey);
+  transition:color .2s ease,border-color .2s ease;
+}
+.social__icon svg{
+  fill:none;stroke:currentColor;stroke-width:1.2;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+
+/* ---- header row, under the wordmark rule ---- */
+.brand{
+  display:grid;
+  justify-items:center;
+  gap:5px;
+  padding-top:2px;
+}
+.social--head{display:flex;gap:6px}
+.social--head a{display:block}
+.social--head .social__icon{width:20px;height:20px}
+.social--head .social__icon svg{width:12px;height:12px}
+.social--head a:hover .social__icon{color:var(--white);border-color:var(--grey)}
+
+/* ---- footer list ---- */
+.social-list{margin:0 0 14px;padding:0;list-style:none;display:grid;gap:12px}
+.social-list a{
+  display:flex;align-items:center;gap:12px;
+  color:var(--grey);
+  transition:color .2s ease;
+}
+.social-list .social__icon{width:26px;height:26px;flex:0 0 26px}
+.social-list .social__icon svg{width:15px;height:15px}
+.social-list a:hover{color:var(--white)}
+.social-list a:hover .social__icon{color:var(--white);border-color:var(--grey)}
+.social-list__name{
+  font-family:var(--font-display);
+  font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+}
+.social-list__handle{
+  display:block;
+  font-size:11px;letter-spacing:.04em;text-transform:none;color:#5c5c5c;
+}
+.footer__col .social-list + ul{
+  padding-top:14px;
+  border-top:1px solid var(--grey-line);
+}
+
+/* ---- follow strip ---- */
+.follow{
+  border-top:1px solid var(--grey-line);
+  padding:clamp(56px,7vw,96px) var(--gutter);
+  text-align:center;
+}
+.follow__eyebrow{
+  margin:0 0 14px;
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);
+}
+.follow__title{
+  margin:0;
+  font-size:clamp(26px,4vw,44px);
+  letter-spacing:.02em;
+}
+.follow__text{
+  max-width:52ch;
+  margin:16px auto 0;
+  font-size:15px;color:var(--grey);
+}
+.follow__list{
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:var(--tile-gap);
+  max-width:1120px;
+  margin:clamp(30px,4vw,48px) auto 0;
+  padding:0;
+}
+.follow__list a{
+  display:grid;
+  justify-items:center;
+  gap:14px;
+  padding:32px 18px;
+  border:1px solid var(--grey-line);
+  transition:background-color .25s ease,border-color .25s ease;
+}
+.follow__list .social__icon{width:44px;height:44px}
+.follow__list .social__icon svg{width:22px;height:22px}
+.follow__list a:hover{background:var(--grey-deep);border-color:var(--grey)}
+.follow__list a:hover .social__icon{color:var(--white);border-color:var(--grey)}
+.follow__platform{
+  font-family:var(--font-display);
+  font-size:14px;letter-spacing:.1em;text-transform:uppercase;
+}
+.follow__handle{
+  display:block;
+  margin-top:6px;
+  font-size:11px;letter-spacing:.04em;text-transform:none;color:var(--grey);
+  word-break:break-word;
+}
+
+@media (max-width:900px){
+  .follow__list{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:520px){
+  .follow__list{grid-template-columns:1fr}
+}
+
+/* Drawer social row — the header marks are hidden at this width, so the
+   mobile menu carries them instead. */
+.social--drawer{display:none}
+@media (max-width:900px){
+  /* restated here: the base .social--head rule above outranks the earlier
+     breakpoint block by source order */
+  .social--head{display:none}
+  .social--drawer{
+    display:flex;
+    gap:10px;
+    margin-top:28px;
+    padding-top:24px;
+    border-top:1px solid var(--grey-line);
+  }
+  .social--drawer .social__icon{width:38px;height:38px}
+  .social--drawer .social__icon svg{width:19px;height:19px}
+}
+
+/* ==========================================================================
+   WORN ON STAGE
+   Split block: the clip on one side, the roll of names on the other. The
+   names carry the section, so they get the display face and a hairline
+   between each — a bill of lading, not a logo wall.
+   ========================================================================== */
+.stage{
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  align-items:stretch;
+  border-top:1px solid var(--grey-line);
+}
+
+.stage__media{
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:#0a0a0a;
+  padding:clamp(20px,3vw,44px);
+}
+.stage__video{
+  /* The clip is a portrait phone frame. Leaving width/height auto lets the
+     element keep its own ratio and take its size from max-height, so the
+     picture fills the box instead of sitting in wide black pillars. Works
+     the same way if a landscape clip is dropped in later. */
+  width:auto;height:auto;
+  max-width:100%;
+  max-height:min(74vh,620px);
+  object-fit:contain;
+  background:var(--black);
+}
+.stage__caption{
+  margin-top:14px;
+  font-family:var(--font-display);
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--grey);
+}
+
+.stage__body{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:clamp(18px,2.4vw,26px);
+  padding:clamp(40px,6vw,90px) clamp(24px,6vw,90px);
+  background:var(--grey-deep);
+}
+.stage__title{font-size:clamp(28px,3.4vw,44px)}
+.stage__text{
+  margin:0;
+  max-width:48ch;
+  font-size:15px;line-height:1.85;color:#d6d6d6;
+}
+
+.stage__group{display:grid;gap:2px}
+.stage__label{
+  margin:0 0 10px;
+  font-size:12px;letter-spacing:.16em;
+  color:var(--grey);
+}
+.stage__names{
+  margin:0;padding:0;list-style:none;
+  display:grid;
+}
+.stage__names li{
+  padding:13px 0;
+  border-bottom:1px solid var(--grey-line);
+  font-family:var(--font-display);
+  font-size:clamp(19px,2.1vw,27px);
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  line-height:1.1;
+}
+.stage__names li:first-child{border-top:1px solid var(--grey-line)}
+.stage__names--pending li{color:var(--grey)}
+
+@media (max-width:900px){
+  .stage{grid-template-columns:1fr}
+  .stage__video{max-height:62vh}
 }
