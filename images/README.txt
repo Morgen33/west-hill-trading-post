@@ -6,11 +6,11 @@ images/hero-poster.jpg is the video's own end frame (first paint / reduced-motio
 Category tiles (landscape 4:3, ~1400x1050):
   cat-bracelets.jpg   cat-bandanas.jpg
 
-BANDANA PRODUCT SHOTS (square 1:1, ~1400x1400) - needed now
-  bandana-black.jpg   the folded/worn black paisley, shot on black
-  bandana-red.jpg     the folded/worn red paisley, shot on black
-  (the two flat square artwork files are useful as secondary shots later;
-   name them bandana-black-flat.png / bandana-red-flat.png)
+BANDANA PRODUCT SHOTS (square 1:1, ~1400x1400) - in place
+  bandana-black.jpg   flat print artwork, black colourway
+  bandana-red.jpg     flat print artwork, red colourway
+  (resized from the 6750px WestHill-BandanaPrints_V03 files. A folded/worn
+   photo on black would still make a stronger primary shot later.)
 
 Behind the work (portrait 3:4):
   pillar-materials.jpg pillar-makers.jpg pillar-marks.jpg pillar-origins.jpg
@@ -33,6 +33,9 @@ SUPPLIED ASSETS (already in place)
                                     plus width/height on the <img> if the shape
                                     changes.
 
+  cat-bandanas.jpg                  the red bandana worn over the face, cropped 4:3
+                                    from a portrait phone selfie
+
 STILL NEEDED
-  cat-bracelets.jpg  cat-bandanas.jpg    the two category tiles
+  cat-bracelets.jpg                      the bracelets category tile
   about-repairs.jpg                      photo beside "He fixes what he makes"
