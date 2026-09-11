@@ -9,8 +9,14 @@ Category tiles (landscape 4:3, ~1400x1050):
 BANDANA PRODUCT SHOTS (square 1:1, ~1400x1400) - in place
   bandana-black.jpg   flat print artwork, black colourway
   bandana-red.jpg     flat print artwork, red colourway
-  (resized from the 6750px WestHill-BandanaPrints_V03 files. A folded/worn
-   photo on black would still make a stronger primary shot later.)
+  (from the 6750px WestHill-BandanaPrints_V03 files. Those are CMYK print
+   files: convert through a colour profile, e.g.
+     sips -m "/System/Library/ColorSync/Profiles/sRGB Profile.icc" -Z 1400
+   ffmpeg ignores the profile and turns the red neon and the black field
+   pure black. The red's field outside its outer frame line is filled with
+   the black print's field colour, so both read as the same size on the
+   page. A folded/worn photo on black would still make a stronger primary
+   shot later.)
 
 Behind the work (portrait 3:4):
   pillar-materials.jpg pillar-makers.jpg pillar-marks.jpg pillar-origins.jpg
