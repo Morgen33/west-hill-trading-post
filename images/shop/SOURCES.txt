@@ -21,9 +21,10 @@ Nothing here was recolored, redrawn, or regenerated. Resizes are WebP and JPEG o
 42  shotgun           Home finish block.
 53  texas             Texas cuff card and page.
 
-video/horse-gallop.mp4   Home film. Horses galloping at sundown.
-                        Mixkit clip 36839, free to use, re-encoded for the web.
-                        Poster: images/shop/horse-poster.jpg
+video/hero.mp4           Home film. Morgen's title film: a horse at a gallop,
+                        ending on the burnt-in West Hill Trading Post name.
+                        Poster is that end frame: images/hero-poster.jpg
+                        The overlaid wordmark fades out when the burnt-in name arrives.
                         Three.js dust sits over this film only. It does not touch product photos.
 
 Existing files kept:
@@ -31,7 +32,7 @@ Existing files kept:
   russ-west-hill-original.webp          the drawing on About, captioned as a drawing
   mark-medallion.webp                   the struck mark on About
   video/on-the-road.mp4                 copy of the existing road clip, filename no longer names anyone
-  video/hero.mp4                        the old title film, not used on the page
+  video/hero.mp4                        the title film, used as the home hero
 
 Not used, on purpose: price-tag snapshots (07, 14, 15, 16), near-duplicates of the rack,
 the cat screenshot, the stamp die with a person's name, the musician poster,
