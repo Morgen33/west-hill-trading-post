@@ -3,6 +3,8 @@
 Russ Snyder's shop. Hand-forged cuffs, toothpicks, and bandanas. Est. 2024, Texas.
 There is no cart. Orders go to [russ@westhilltradingpost.com](mailto:russ@westhilltradingpost.com).
 
+The home page opens on a galloping-horse film with the name in a western face. Dust over that film is Three.js and stays off the product photographs.
+
 ## Run it
 
 ```bash
