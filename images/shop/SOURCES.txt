@@ -21,6 +21,11 @@ Nothing here was recolored, redrawn, or regenerated. Resizes are WebP and JPEG o
 42  shotgun           Home finish block.
 53  texas             Texas cuff card and page.
 
+video/horse-gallop.mp4   Home film. Horses galloping at sundown.
+                        Mixkit clip 36839, free to use, re-encoded for the web.
+                        Poster: images/shop/horse-poster.jpg
+                        Three.js dust sits over this film only. It does not touch product photos.
+
 Existing files kept:
   bandana-red.jpg / bandana-black.jpg   the print art, also re-encoded under images/shop/
   russ-west-hill-original.webp          the drawing on About, captioned as a drawing

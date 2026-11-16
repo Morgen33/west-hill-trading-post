@@ -14,11 +14,12 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300;1,9..144,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300;1,9..144,500&family=Outfit:wght@300;400;500&family=Rye&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="preload" as="image" href="images/shop/sundown-desert-1100.webp" type="image/webp"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "West Hill Trading Post", "founder": {"@type": "Person", "name": "Russ Snyder"}, "email": "russ@westhilltradingpost.com", "foundingDate": "2024", "sameAs": ["https://www.instagram.com/westhilltradingpost/", "https://www.tiktok.com/@westhilltradingpost", "https://www.tiktok.com/@.mr.snyder", "https://www.facebook.com/profile.php?id=61591486615658"]}</script>
+<link rel="preload" as="image" href="images/shop/horse-poster.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "West Hill Trading Post", "founder": {"@type": "Person", "name": "Russ Snyder"}, "email": "russ@westhilltradingpost.com", "foundingDate": "2024", "sameAs": ["https://www.instagram.com/westhilltradingpost/", "https://www.tiktok.com/@westhilltradingpost", "https://www.tiktok.com/@.mr.snyder", "https://www.facebook.com/profile.php?id=61591486615658"]}</script>
 </head>
-<body>
+<body class="home">
 
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
@@ -39,20 +40,26 @@
 
 <main id="main">
 
-<section class="hero" aria-label="Introduction">
-  <div class="hero__copy">
-    <p class="eyebrow">Est. 2024 ★ Texas</p>
-    <h1>Hand-forged<br><em>cuffs.</em></h1>
-    <p class="hero__lede">Russ Snyder weaves and stamps them at the bench. Copper, stainless, and bronze. Built to be worn hard and kept a long time.</p>
-    <div class="hero__actions">
-      <a class="btn btn--solid" href="collection.html">Shop the cuffs</a>
-      <a class="btn btn--ghost" href="about.html">The maker</a>
-    </div>
-    <p class="hero__note">Pictured · a tri-color cuff on desert rock</p>
+<section class="hero hero--film" aria-label="Introduction">
+  <video
+    class="hero__film"
+    poster="images/shop/horse-poster.jpg"
+    autoplay muted loop playsinline
+    preload="metadata"
+    aria-label="Horses galloping across open country at sundown">
+    <source src="video/horse-gallop.mp4" type="video/mp4">
+  </video>
+  <canvas class="hero__dust" aria-hidden="true"></canvas>
+  <div class="hero__veil" aria-hidden="true"></div>
+  <div class="hero__mark">
+    <p class="hero__est">Est. 2024 ★ Texas</p>
+    <h1 class="west">
+      <span class="west__line">West Hill</span>
+      <span class="west__rule" aria-hidden="true"></span>
+      <span class="west__line west__line--sub">Trading Post</span>
+    </h1>
+    <a class="btn btn--solid" href="collection.html">Shop the cuffs</a>
   </div>
-  <figure class="hero__figure">
-    <picture><source type="image/webp" srcset="images/shop/sundown-desert-640.webp 640w, images/shop/sundown-desert-1100.webp 1100w, images/shop/sundown-desert-1237.webp 1237w" sizes="(min-width: 860px) 58vw, 100vw"><img src="images/shop/sundown-desert.jpg" alt="A tri-color woven cuff resting on desert rock, stainless outside with copper and bronze through the weave." width="1237" height="2200" loading="eager" fetchpriority="high" decoding="async"></picture>
-  </figure>
 </section>
 
 <div class="marquee" aria-hidden="true">
@@ -291,6 +298,7 @@
   <p class="footer__legal">© <span id="year">2026</span> West Hill Trading Post · Est. 2024 ★ Texas</p>
 </footer>
 <script src="script.js"></script>
+<script type="module" src="hero.js"></script>
 
 </body>
 </html>

@@ -5,6 +5,15 @@
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
+  var header = document.querySelector(".site-header");
+  if (header && document.body.classList.contains("home")) {
+    var paint = function () {
+      header.classList.toggle("is-solid", window.scrollY > 28);
+    };
+    paint();
+    window.addEventListener("scroll", paint, { passive: true });
+  }
+
   var toggle = document.querySelector(".nav-toggle");
   var drawer = document.getElementById("drawer");
   if (toggle && drawer) {
