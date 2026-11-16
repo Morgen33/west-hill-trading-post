@@ -1,0 +1,220 @@
+{
+  "sundown-stamp": {
+    "w": 2200,
+    "h": 1650,
+    "widths": [
+      640,
+      1100,
+      1800
+    ],
+    "photo": "02"
+  },
+  "sundown-bandana": {
+    "w": 2200,
+    "h": 1650,
+    "widths": [
+      640,
+      1100,
+      1800
+    ],
+    "photo": "08"
+  },
+  "sundown-profile": {
+    "w": 2200,
+    "h": 1650,
+    "widths": [
+      640,
+      1100,
+      1800
+    ],
+    "photo": "09"
+  },
+  "horseshoe-detail": {
+    "w": 2200,
+    "h": 1650,
+    "widths": [
+      640,
+      1100,
+      1800
+    ],
+    "photo": "10"
+  },
+  "horseshoe-row": {
+    "w": 2200,
+    "h": 1650,
+    "widths": [
+      640,
+      1100,
+      1800
+    ],
+    "photo": "11"
+  },
+  "levi-stack": {
+    "w": 1650,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1650
+    ],
+    "photo": "13"
+  },
+  "braid-macro": {
+    "w": 1650,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1650
+    ],
+    "photo": "17"
+  },
+  "braid": {
+    "w": 1650,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1650
+    ],
+    "photo": "20"
+  },
+  "toothpicks": {
+    "w": 1205,
+    "h": 1306,
+    "widths": [
+      640,
+      1100,
+      1205
+    ],
+    "photo": "21"
+  },
+  "woven-group": {
+    "w": 1237,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1237
+    ],
+    "photo": "27"
+  },
+  "rack": {
+    "w": 1650,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1650
+    ],
+    "photo": "29"
+  },
+  "ranch-hand": {
+    "w": 1650,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1650
+    ],
+    "photo": "31"
+  },
+  "sundown-desert": {
+    "w": 1237,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1237
+    ],
+    "photo": "38"
+  },
+  "cactus": {
+    "w": 1237,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1237
+    ],
+    "photo": "39"
+  },
+  "levi-cactus": {
+    "w": 1237,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1237
+    ],
+    "photo": "40"
+  },
+  "logo-sunset": {
+    "w": 1146,
+    "h": 418,
+    "widths": [
+      640,
+      1100,
+      1146
+    ],
+    "photo": "41"
+  },
+  "shotgun": {
+    "w": 1024,
+    "h": 1536,
+    "widths": [
+      640,
+      1024
+    ],
+    "photo": "42"
+  },
+  "texas": {
+    "w": 1237,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1237
+    ],
+    "photo": "53"
+  },
+  "russ": {
+    "w": 1237,
+    "h": 2200,
+    "widths": [
+      640,
+      1100,
+      1237
+    ],
+    "photo": "24",
+    "note": "horizontal flip only, to undo a mirrored selfie"
+  },
+  "bandana-red": {
+    "w": 1400,
+    "h": 1400,
+    "widths": [
+      640,
+      1100,
+      1400
+    ],
+    "photo": "existing-print"
+  },
+  "bandana-black": {
+    "w": 1400,
+    "h": 1400,
+    "widths": [
+      640,
+      1100,
+      1400
+    ],
+    "photo": "existing-print"
+  },
+  "road-poster": {
+    "w": 444,
+    "h": 960,
+    "widths": [
+      444
+    ],
+    "photo": "video-frame"
+  }
+}
