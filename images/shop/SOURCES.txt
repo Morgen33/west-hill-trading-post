@@ -24,7 +24,7 @@ Nothing here was recolored, redrawn, or regenerated. Resizes are WebP and JPEG o
 video/hero.mp4           Home film. Morgen's title film: a horse at a gallop,
                         ending on the burnt-in West Hill Trading Post name.
                         Poster is that end frame: images/hero-poster.jpg
-                        The overlaid wordmark fades out when the burnt-in name arrives.
+                        No type is laid over the film. The burnt-in name is the hero branding.
                         Three.js dust sits over this film only. It does not touch product photos.
 
 Existing files kept:

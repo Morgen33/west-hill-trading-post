@@ -3,7 +3,7 @@
 Russ Snyder's shop. Hand-forged cuffs, toothpicks, and bandanas. Est. 2024, Texas.
 There is no cart. Orders go to [russ@westhilltradingpost.com](mailto:russ@westhilltradingpost.com).
 
-The home page opens on `video/hero.mp4`, Morgen's title film. It ends on the burnt-in name, so the overlaid wordmark fades out there. Dust over the film is Three.js and stays off the product photographs.
+The home page opens on `video/hero.mp4`, Morgen's title film. The only name in that hero is the logotype burnt into the film. Dust over the film is Three.js and stays off the product photographs.
 
 ## Run it
 

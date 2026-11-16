@@ -64,27 +64,9 @@
 
   var video = document.querySelector(".road__stage video");
   var heroFilm = document.querySelector(".hero__film");
-  var hero = document.querySelector(".hero--film");
-  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  /* The burnt-in name lands just after 11 seconds. The overlay gets out of the way. */
-  var LOGO_AT = 11;
-  function syncLogo() {
-    if (!hero || !heroFilm) return;
-    if (reduceMotion) {
-      hero.classList.add("hero--logo");
-      return;
-    }
-    hero.classList.toggle("hero--logo", heroFilm.currentTime >= LOGO_AT);
-  }
-  if (heroFilm && reduceMotion) {
+  if (heroFilm && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     heroFilm.removeAttribute("autoplay");
     heroFilm.pause();
-  }
-  if (heroFilm) {
-    heroFilm.addEventListener("timeupdate", syncLogo);
-    heroFilm.addEventListener("seeked", syncLogo);
-    heroFilm.addEventListener("play", syncLogo);
-    syncLogo();
   }
   if (video) {
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

@@ -1,6 +1,6 @@
 /* Home film. Three.js dust rides over the gallop.
-   The video and the wordmark are real DOM, so the page still
-   stands if WebGL refuses to start. Dust never covers the shop. */
+   The video is real DOM, so the page still stands if WebGL
+   refuses to start. Dust never covers the shop. */
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js";
 
 var root = document.querySelector(".hero--film");
@@ -131,8 +131,6 @@ function boot(root, canvas) {
     var dt = Math.min(clock.getDelta(), 0.05);
     px += (tx - px) * 0.07;
     py += (ty - py) * 0.07;
-    root.style.setProperty("--px", px.toFixed(4));
-    root.style.setProperty("--py", py.toFixed(4));
     camera.position.x = px * 1.15;
     camera.position.y = 0.6 - py * 0.45;
     camera.lookAt(px * 0.2, 0.15, 0);

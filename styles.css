@@ -158,8 +158,6 @@ body.home .site-header.is-solid {
   min-height: 620px;
   overflow: hidden;
   background: #140e0a;
-  --px: 0;
-  --py: 0;
 }
 .hero__film {
   position: absolute;
@@ -193,60 +191,12 @@ body.home .site-header.is-solid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   text-align: center;
   padding: calc(var(--header) + 6vh) 18px 7vh;
   pointer-events: none;
-  perspective: 1100px;
-}
-.hero__title {
-  transition: opacity 0.7s ease;
-}
-.hero--logo .hero__title {
-  opacity: 0;
 }
 .hero__mark a { pointer-events: auto; }
-.hero__est {
-  margin: 0 0 14px;
-  font-family: var(--cond);
-  font-weight: 500;
-  letter-spacing: 0.42em;
-  text-transform: uppercase;
-  font-size: 13px;
-  color: #f0c48a;
-}
-.west {
-  margin: 0;
-  font-family: "Rye", "Rockwell", "Copperplate", Palatino, serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  line-height: 0.86;
-  color: #f7f1e4;
-  text-shadow:
-    0 2px 0 #4a2412,
-    0 14px 36px rgba(0, 0, 0, 0.55);
-  transform: rotateX(calc(var(--py) * -7deg)) rotateY(calc(var(--px) * 9deg));
-  transform-style: preserve-3d;
-  will-change: transform;
-}
-.west__line {
-  display: block;
-  font-size: clamp(46px, 8.6vw, 124px);
-}
-.west__rule {
-  display: block;
-  width: min(42vw, 280px);
-  height: 2px;
-  margin: 14px auto 12px;
-  background: linear-gradient(90deg, transparent, #e0a15a, transparent);
-}
-.west__line--sub {
-  font-size: clamp(16px, 2.15vw, 30px);
-  letter-spacing: 0.34em;
-}
-.hero__mark .btn { margin-top: 28px; }
 .eyebrow {
   font-family: var(--cond);
   font-weight: 500;
@@ -924,8 +874,6 @@ body.home .site-header.is-solid {
   .hero__film { object-fit: contain; object-position: center; }
 }
 @media (max-width: 640px) {
-  .west__line { font-size: clamp(38px, 12vw, 64px); }
-  .west__line--sub { font-size: clamp(13px, 3.4vw, 18px); letter-spacing: 0.22em; }
   .rail__card, .rail__card--wide { flex-basis: 86vw; }
   .bento { gap: 22px 0; }
   .card__media { min-height: 0; }
@@ -939,6 +887,4 @@ body.home .site-header.is-solid {
     animation: none !important;
     transition: none !important;
   }
-  .west { transform: none; }
-  .hero__title { opacity: 0; }
 }
