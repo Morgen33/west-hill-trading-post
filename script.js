@@ -63,6 +63,11 @@
   }
 
   var video = document.querySelector(".road__stage video");
+  var heroFilm = document.querySelector(".hero__film");
+  if (heroFilm && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    heroFilm.removeAttribute("autoplay");
+    heroFilm.pause();
+  }
   if (video) {
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) {

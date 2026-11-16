@@ -49,6 +49,16 @@
     aria-label="Horses galloping across open country at sundown">
     <source src="video/horse-gallop.mp4" type="video/mp4">
   </video>
+  <script>
+    /* Runs before the Three.js module. A blocked CDN must not leave the film playing. */
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      var heroFilm = document.querySelector(".hero__film");
+      if (heroFilm) {
+        heroFilm.removeAttribute("autoplay");
+        heroFilm.pause();
+      }
+    }
+  </script>
   <canvas class="hero__dust" aria-hidden="true"></canvas>
   <div class="hero__veil" aria-hidden="true"></div>
   <div class="hero__mark">
