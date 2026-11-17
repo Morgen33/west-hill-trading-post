@@ -107,4 +107,23 @@
 
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
+
+  /* Order button. One component for every product.
+     Later, point this at a Stripe Payment Link or a Shopify Buy Button
+     and leave data-order / data-price on the markup. */
+  Array.prototype.forEach.call(document.querySelectorAll('.order'), function (btn) {
+    var name = btn.getAttribute('data-order') || 'West Hill piece';
+    var price = btn.getAttribute('data-price') || 'Price on request';
+    var body = [
+      'Product: ' + name,
+      'Price: ' + price,
+      '',
+      'Wrist size:',
+      'Shipping address:',
+      ''
+    ].join('\n');
+    btn.setAttribute('href', 'mailto:russ@westhilltradingpost.com?subject='
+      + encodeURIComponent('Order: ' + name)
+      + '&body=' + encodeURIComponent(body));
+  });
 })();

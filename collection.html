@@ -80,7 +80,7 @@
       <button class="utils__btn" type="button" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
       <a class="utils__btn" href="#" aria-label="Account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.6-4 4.2-6 7.5-6s5.9 2 7.5 6"/></svg></a>
       <a class="utils__btn" href="#" aria-label="Wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l2.3 4.9 5.2.7-3.8 3.7.9 5.3-4.6-2.5-4.6 2.5.9-5.3L4.5 9.6l5.2-.7z"/></svg></a>
-      <a class="utils__btn" href="#" aria-label="Cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8h13l-1.2 12H6.7z"/><path d="M9 8V6.4A3 3 0 0 1 12 3.4a3 3 0 0 1 3 3V8"/></svg></a>
+      <a class="utils__btn" href="collection.html" aria-label="Cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8h13l-1.2 12H6.7z"/><path d="M9 8V6.4A3 3 0 0 1 12 3.4a3 3 0 0 1 3 3V8"/></svg></a>
       <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -115,22 +115,81 @@
 
   <section class="pagehead" style="--img:url('images/collection-head.jpg')">
     <h1>Collection</h1>
-    <p>Two pieces by one maker, for now. Built to be used hard and kept a long time.</p>
+    <p>Bracelets and bandanas by Russ Snyder. A price is listed only when it is on the tag. Anything else is priced when you write.</p>
   </section>
 
   <!-- BRACELETS -->
   <section class="catrow" id="bracelets">
-    <div class="catrow__head"><h2>Bracelets</h2><span>Copper &middot; Brass &middot; Nickel silver</span></div>
+    <div class="catrow__head"><h2>Bracelets</h2><span>Copper &middot; Stainless &middot; Bronze</span></div>
     <div class="catrow__intro">
       <p>
         Woven and forged by Russ, hand-polished and left unlacquered so the metal keeps
-        moving after it leaves the bench. Each one is struck with the mark.
+        moving after it leaves the bench.
       </p>
     </div>
-    <div class="soon">
-      <p class="soon__label">Listing soon</p>
-      <p class="soon__line">The first pieces are being photographed now.</p>
-      <a class="btn" href="mailto:russ@westhilltradingpost.com?subject=Bracelets">Ask what's available</a>
+    <figure class="feature">
+      <img src="images/cuff-cactus.jpg" alt="A woven copper and stainless cuff resting on a cactus." width="1012" height="1800">
+    </figure>
+    <div class="grid grid--shop">
+      <article class="buycard">
+        <div class="buycard__media"><img src="images/sundown.jpg" alt="Tri-color woven cuffs in stainless, copper, and bronze on a red bandana." width="2200" height="1650"></div>
+        <h3>Sundown</h3>
+        <p>Woven stainless, copper, and bronze.</p>
+        <p class="buycard__price">$200</p>
+        <a class="btn order" data-order="Sundown" data-price="$200">Order</a>
+      </article>
+      <article class="buycard">
+        <div class="buycard__media"><img src="images/levi.jpg" alt="A stack of copper and stainless woven cuffs." width="1650" height="2200"></div>
+        <h3>Levi</h3>
+        <p>A women's cuff in copper and stainless.</p>
+        <p class="buycard__price">$200</p>
+        <a class="btn order" data-order="Levi" data-price="$200">Order</a>
+      </article>
+      <article class="buycard">
+        <div class="buycard__media"><img src="images/ranch-hand.jpg" alt="Three copper woven cuffs on a dark rail." width="1650" height="2200"></div>
+        <h3>Ranch Hand</h3>
+        <p>Copper, with no stamp.</p>
+        <p class="buycard__price">$180</p>
+        <a class="btn order" data-order="Ranch Hand" data-price="$180">Order</a>
+      </article>
+      <article class="buycard">
+        <div class="buycard__media"><img src="images/horseshoe.jpg" alt="A row of horseshoe-stamped cuffs." width="2200" height="1650"></div>
+        <h3>Horseshoe</h3>
+        <p>Stamped with a horseshoe.</p>
+        <p class="buycard__price">Price on request</p>
+        <a class="btn order" data-order="Horseshoe" data-price="Price on request">Order</a>
+      </article>
+      <article class="buycard">
+        <div class="buycard__media"><img src="images/braid.jpg" alt="A heavy braided cuff held in a hand." width="1650" height="2200"></div>
+        <h3>Heavy braid</h3>
+        <p>A heavy braid, in more than one metal.</p>
+        <p class="buycard__price">Price on request</p>
+        <a class="btn order" data-order="Heavy braid" data-price="Price on request">Order</a>
+      </article>
+      <article class="buycard">
+        <div class="buycard__media"><img src="images/texas.jpg" alt="A copper cuff stamped TEXAS, on the workbench." width="1237" height="2200"></div>
+        <h3>Texas</h3>
+        <p>Copper, stamped TEXAS.</p>
+        <p class="buycard__price">Price on request</p>
+        <a class="btn order" data-order="Texas cuff" data-price="Price on request">Order</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- TOOTHPICKS -->
+  <section class="catrow" id="toothpicks">
+    <div class="catrow__head"><h2>Toothpicks</h2><span>Small goods</span></div>
+    <div class="catrow__intro">
+      <p>Twisted metal, carried in a leather sleeve stamped with the name.</p>
+    </div>
+    <div class="grid grid--shop grid--one">
+      <article class="buycard">
+        <div class="buycard__media"><img src="images/toothpicks.jpg" alt="Twisted metal toothpicks between two leather sleeves stamped West Hill Trading Post." width="1205" height="1306"></div>
+        <h3>Twisted toothpicks</h3>
+        <p>In a leather sleeve stamped West Hill Trading Post.</p>
+        <p class="buycard__price">Price on request</p>
+        <a class="btn order" data-order="Twisted toothpicks" data-price="Price on request">Order</a>
+      </article>
     </div>
   </section>
 
@@ -140,31 +199,28 @@
     <div class="catrow__intro">
       <p>
         Classic paisley, printed in short runs with the West Hill mark set into the
-        border. Two colourways. Made to be worn out, washed, and worn again.
+        border. Red and black. Made to be worn out, washed, and worn again.
+        Held in stock and posted within two working days.
       </p>
     </div>
-
-    <div class="grid grid--2 grid--products">
-      <article class="product product--static">
-        <span class="media" style="--img:url('images/bandana-black.jpg')"></span>
-        <span class="product__meta">
-          <span class="product__name">Paisley Bandana &mdash; Black</span>
-          <span class="product__price">In stock</span>
-        </span>
+    <figure class="feature">
+      <img src="images/bandana-worn.jpg" alt="A woman in a cowboy hat wearing the red West Hill bandana." width="1122" height="1402">
+    </figure>
+    <div class="grid grid--shop grid--pair">
+      <article class="buycard">
+        <div class="buycard__media"><img src="images/bandana-red.jpg" alt="The red West Hill paisley bandana print." width="1400" height="1400"></div>
+        <h3>Bandana — red</h3>
+        <p>Red paisley, printed with the mark.</p>
+        <p class="buycard__price">Price on request</p>
+        <a class="btn order" data-order="Bandana — red" data-price="Price on request">Order</a>
       </article>
-
-      <article class="product product--static">
-        <span class="media" style="--img:url('images/bandana-red.jpg')"></span>
-        <span class="product__meta">
-          <span class="product__name">Paisley Bandana &mdash; Red</span>
-          <span class="product__price">In stock</span>
-        </span>
+      <article class="buycard">
+        <div class="buycard__media"><img src="images/bandana-black.jpg" alt="The black West Hill paisley bandana print." width="1400" height="1400"></div>
+        <h3>Bandana — black</h3>
+        <p>The same print, in black.</p>
+        <p class="buycard__price">Price on request</p>
+        <a class="btn order" data-order="Bandana — black" data-price="Price on request">Order</a>
       </article>
-    </div>
-
-    <div class="catrow__note">
-      <p>Held in stock and posted within two working days.</p>
-      <a class="btn" href="mailto:russ@westhilltradingpost.com?subject=Bandana%20order">Order a bandana</a>
     </div>
   </section>
 
