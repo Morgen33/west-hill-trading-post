@@ -3,182 +3,231 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Cuffs — West Hill Trading Post</title>
-<meta name="description" content="Woven copper, stainless, and bronze cuffs by Russ Snyder, plus horseshoe and Texas stamps, braided cuffs, toothpicks, and bandanas.">
-<meta name="theme-color" content="#14110e">
-<meta property="og:title" content="The Cuffs — West Hill Trading Post">
-<meta property="og:description" content="Woven copper, stainless, and bronze cuffs by Russ Snyder, plus horseshoe and Texas stamps, braided cuffs, toothpicks, and bandanas.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/shop/rack.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Collection — WEST HILL TRADING POST</title>
+<meta name="description" content="Bracelets and bandanas by Russ Snyder, with room on the bench for more artisans. West Hill Trading Post.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300;1,9..144,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
 
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <a class="logo" href="index.html" aria-label="West Hill Trading Post, home">
-    <span class="logo__name">West Hill</span>
-    <span class="logo__sub">Trading Post</span>
-  </a>
-  <nav class="nav" aria-label="Main"><a href="collection.html" aria-current="page">Cuffs</a><a href="about.html">Maker</a><a href="worn-by.html">Worn by</a><a href="contact.html">Care</a></nav>
-  <a class="header__write" href="mailto:russ@westhilltradingpost.com">Write to order</a>
-  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="drawer">
-    <span></span><span></span><span class="sr-only">Menu</span>
-  </button>
+
+<header class="header" id="header">
+  <div class="header__bar">
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-collection">Collection <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--md" id="menu-collection">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="collection.html#bracelets">Bracelets</a></li>
+                <li><a href="collection.html#bandanas">Bandanas</a></li>
+                <li><a href="open-bench.html">The Open Bench</a></li>
+              </ul>
+              <div class="megamenu__feature">
+                <div class="media media--menu"></div>
+                <p class="megamenu__caption">Bracelets &amp; bandanas by Russ Snyder</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-about">About <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--sm" id="menu-about">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="about.html#makers">The Maker</a></li>
+                <li><a href="about.html#materials">Materials</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-care">Customer Care <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--sm" id="menu-care">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html#shipping">Shipping</a></li>
+                <li><a href="contact.html#returns">Returns</a></li>
+                <li><a href="contact.html#repairs">Repairs &amp; Care</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="brand">
+      <a class="logo" href="index.html" aria-label="West Hill Trading Post — home">
+        <span class="logo__line">WEST HILL<span class="logo__dot">:</span>TRADING POST</span>
+        <span class="logo__rule" aria-hidden="true"></span>
+      </a>
+      <nav class="social social--head" aria-label="Social">
+        <a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener" aria-label="West Hill Trading Post on Instagram"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9"/></svg></span></a>
+        <a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener" aria-label="West Hill Trading Post on TikTok"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span></a>
+        <a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener" aria-label="West Hill Trading Post on Facebook"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 20.9v-7.9h2.7l.4-3h-3.1V8.1c0-.9.3-1.4 1.5-1.4h1.7V4.05a21 21 0 0 0-2.6-.15c-2.6 0-4.3 1.6-4.3 4.4V10H7.3v3H10v7.9"/></svg></span></a>
+      </nav>
+    </div>
+
+    <div class="utils">
+      <button class="utils__lang" type="button">EN</button>
+      <button class="utils__btn" type="button" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+      <a class="utils__btn" href="#" aria-label="Account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.6-4 4.2-6 7.5-6s5.9 2 7.5 6"/></svg></a>
+      <a class="utils__btn" href="#" aria-label="Wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l2.3 4.9 5.2.7-3.8 3.7.9 5.3-4.6-2.5-4.6 2.5.9-5.3L4.5 9.6l5.2-.7z"/></svg></a>
+      <a class="utils__btn" href="#" aria-label="Cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8h13l-1.2 12H6.7z"/><path d="M9 8V6.4A3 3 0 0 1 12 3.4a3 3 0 0 1 3 3V8"/></svg></a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
 </header>
+
 <div class="drawer" id="drawer" hidden>
-  <nav aria-label="Mobile"><a href="collection.html">Cuffs</a><a href="about.html">Maker</a><a href="worn-by.html">Worn by</a><a href="contact.html">Care</a><a href="open-bench.html">Open Bench</a><a href="mailto:russ@westhilltradingpost.com">Write to order</a></nav>
-  <nav class="drawer__social" aria-label="Social"><a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener noreferrer">Instagram · @westhilltradingpost</a><a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener noreferrer">TikTok · @westhilltradingpost</a><a href="https://www.tiktok.com/@.mr.snyder" target="_blank" rel="noopener noreferrer">TikTok · @.mr.snyder</a><a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener noreferrer">Facebook · West Hill Trading Post</a></nav>
+  <nav class="drawer__nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <details><summary>Collection</summary>
+      <a href="collection.html#bracelets">Bracelets</a>
+      <a href="collection.html#bandanas">Bandanas</a>
+      <a href="open-bench.html">The Open Bench</a>
+    </details>
+    <details><summary>About</summary>
+      <a href="about.html">Our Story</a>
+      <a href="about.html#makers">The Maker</a>
+    </details>
+    <details><summary>Customer Care</summary>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#shipping">Shipping</a>
+    </details>
+  </nav>
+  <nav class="social social--head social--drawer" aria-label="Social">
+    <a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener" aria-label="Instagram"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9"/></svg></span></a>
+    <a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener" aria-label="TikTok — West Hill Trading Post"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span></a>
+    <a href="https://www.tiktok.com/@.mr.snyder" target="_blank" rel="noopener" aria-label="TikTok — Russ Snyder"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span></a>
+    <a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener" aria-label="Facebook"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 20.9v-7.9h2.7l.4-3h-3.1V8.1c0-.9.3-1.4 1.5-1.4h1.7V4.05a21 21 0 0 0-2.6-.15c-2.6 0-4.3 1.6-4.3 4.4V10H7.3v3H10v7.9"/></svg></span></a>
+  </nav>
 </div>
 
 <main id="main">
 
-<header class="page-hero">
-  <div class="page-hero__copy">
-    <p class="eyebrow">The collection</p>
-    <h1>The cuffs.</h1>
-    <p>These are the pieces. The photographs are the pieces, not drawings of them. Three have a price from the hang tag. The rest are inquire, until Russ puts a number on them.</p>
-  </div>
-  <div class="page-hero__photo">
-    <picture><source type="image/webp" srcset="images/shop/rack-640.webp 640w, images/shop/rack-1100.webp 1100w, images/shop/rack-1650.webp 1650w" sizes="(min-width: 900px) 46vw, 100vw"><img src="images/shop/rack.jpg" alt="Two rails of woven cuffs on a display stand, with a red paisley bandana underneath." width="1650" height="2200" loading="lazy" decoding="async"></picture>
-  </div>
-</header>
-<div class="bento">
-  <div class="group-label">
-    <h2>Cuffs</h2>
-    <span class="lede">Woven, stamped, braided.</span>
-  </div>
-  
-<a class="card card--8" href="sundown.html">
-  <span class="card__media"><picture><source type="image/webp" srcset="images/shop/sundown-bandana-640.webp 640w, images/shop/sundown-bandana-1100.webp 1100w, images/shop/sundown-bandana-1800.webp 1800w" sizes="(min-width: 900px) 40vw, 100vw"><img src="images/shop/sundown-bandana.jpg" alt="Four tri-color woven cuffs, stainless with copper and bronze, on a dark rail over a red paisley bandana." width="2200" height="1650" loading="lazy" decoding="async"></picture></span>
-  <span class="card__meta">
-    <span class="card__name">Sundown</span>
-    <span class="card__price">$200</span>
-    <span class="card__metal">Stainless, copper, and bronze</span>
-  </span>
-</a>
+  <section class="pagehead" style="--img:url('images/collection-head.jpg')">
+    <h1>Collection</h1>
+    <p>Two pieces by one maker, for now. Built to be used hard and kept a long time.</p>
+  </section>
 
-<a class="card" href="levi.html">
-  <span class="card__media"><picture><source type="image/webp" srcset="images/shop/levi-stack-640.webp 640w, images/shop/levi-stack-1100.webp 1100w, images/shop/levi-stack-1650.webp 1650w" sizes="(min-width: 900px) 40vw, 100vw"><img src="images/shop/levi-stack.jpg" alt="A stack of copper and stainless woven cuffs on a dark rail, with a red paisley bandana behind them." width="1650" height="2200" loading="lazy" decoding="async"></picture></span>
-  <span class="card__meta">
-    <span class="card__name">Levi</span>
-    <span class="card__price">$200</span>
-    <span class="card__metal">Copper and stainless</span>
-  </span>
-</a>
+  <!-- BRACELETS -->
+  <section class="catrow" id="bracelets">
+    <div class="catrow__head"><h2>Bracelets</h2><span>Copper &middot; Brass &middot; Nickel silver</span></div>
+    <div class="catrow__intro">
+      <p>
+        Woven and forged by Russ, hand-polished and left unlacquered so the metal keeps
+        moving after it leaves the bench. Each one is struck with the mark.
+      </p>
+    </div>
+    <div class="soon">
+      <p class="soon__label">Listing soon</p>
+      <p class="soon__line">The first pieces are being photographed now.</p>
+      <a class="btn" href="mailto:russ@westhilltradingpost.com?subject=Bracelets">Ask what's available</a>
+    </div>
+  </section>
 
-<a class="card" href="ranch-hand.html">
-  <span class="card__media"><picture><source type="image/webp" srcset="images/shop/ranch-hand-640.webp 640w, images/shop/ranch-hand-1100.webp 1100w, images/shop/ranch-hand-1650.webp 1650w" sizes="(min-width: 900px) 40vw, 100vw"><img src="images/shop/ranch-hand.jpg" alt="Three copper woven cuffs on a dark rail." width="1650" height="2200" loading="lazy" decoding="async"></picture></span>
-  <span class="card__meta">
-    <span class="card__name">Ranch Hand</span>
-    <span class="card__price">$180</span>
-    <span class="card__metal">Copper, no stamp</span>
-  </span>
-</a>
+  <!-- BANDANAS -->
+  <section class="catrow" id="bandanas">
+    <div class="catrow__head"><h2>Bandanas</h2><span>In stock &middot; ships from the bench</span></div>
+    <div class="catrow__intro">
+      <p>
+        Classic paisley, printed in short runs with the West Hill mark set into the
+        border. Two colourways. Made to be worn out, washed, and worn again.
+      </p>
+    </div>
 
-<a class="card card--land" href="horseshoe.html">
-  <span class="card__media"><picture><source type="image/webp" srcset="images/shop/horseshoe-row-640.webp 640w, images/shop/horseshoe-row-1100.webp 1100w, images/shop/horseshoe-row-1800.webp 1800w" sizes="(min-width: 900px) 40vw, 100vw"><img src="images/shop/horseshoe-row.jpg" alt="A row of horseshoe-stamped cuffs on a rail over a red paisley bandana." width="2200" height="1650" loading="lazy" decoding="async"></picture></span>
-  <span class="card__meta">
-    <span class="card__name">Horseshoe</span>
-    <span class="card__price">Inquire</span>
-    <span class="card__metal">Stainless and copper, horseshoe stamp</span>
-  </span>
-</a>
+    <div class="grid grid--2 grid--products">
+      <article class="product product--static">
+        <span class="media" style="--img:url('images/bandana-black.jpg')"></span>
+        <span class="product__meta">
+          <span class="product__name">Paisley Bandana &mdash; Black</span>
+          <span class="product__price">In stock</span>
+        </span>
+      </article>
 
-<a class="card" href="braid.html">
-  <span class="card__media"><picture><source type="image/webp" srcset="images/shop/braid-640.webp 640w, images/shop/braid-1100.webp 1100w, images/shop/braid-1650.webp 1650w" sizes="(min-width: 900px) 40vw, 100vw"><img src="images/shop/braid.jpg" alt="A heavy braided cuff held in a hand, the strands in more than one metal." width="1650" height="2200" loading="lazy" decoding="async"></picture></span>
-  <span class="card__meta">
-    <span class="card__name">Heavy braid</span>
-    <span class="card__price">Inquire</span>
-    <span class="card__metal">Braided metal</span>
-  </span>
-</a>
+      <article class="product product--static">
+        <span class="media" style="--img:url('images/bandana-red.jpg')"></span>
+        <span class="product__meta">
+          <span class="product__name">Paisley Bandana &mdash; Red</span>
+          <span class="product__price">In stock</span>
+        </span>
+      </article>
+    </div>
 
-  
-<a class="card card--6" href="texas.html">
-  <span class="card__media"><picture><source type="image/webp" srcset="images/shop/texas-640.webp 640w, images/shop/texas-1100.webp 1100w, images/shop/texas-1237.webp 1237w" sizes="(min-width: 900px) 40vw, 100vw"><img src="images/shop/texas.jpg" alt="A copper cuff stamped TEXAS on the inside, resting on inlaid metal bars at the workbench." width="1237" height="2200" loading="lazy" decoding="async"></picture></span>
-  <span class="card__meta">
-    <span class="card__name">Texas cuff</span>
-    <span class="card__price">Inquire</span>
-    <span class="card__metal">Stamped copper, with inlaid bars</span>
-  </span>
-</a>
+    <div class="catrow__note">
+      <p>Held in stock and posted within two working days.</p>
+      <a class="btn" href="mailto:russ@westhilltradingpost.com?subject=Bandana%20order">Order a bandana</a>
+    </div>
+  </section>
 
-  <aside class="note-card card--6">
-    <p class="eyebrow">Custom</p>
-    <h2 style="font-weight:300;font-size:clamp(36px,4vw,56px)">Stamps.</h2>
-    <p>Horseshoe, an Indian head, TEXAS, or a mark of your own. Write before you assume a price. Personalised pieces are final sale.</p>
-    <a href="mailto:russ@westhilltradingpost.com?subject=Custom%20stamp">Ask about a stamp</a>
-  </aside>
-  <div class="group-label" id="small-goods">
-    <h2>Small goods</h2>
-    <span class="lede">Sleeves and bandanas.</span>
-  </div>
-  
-<a class="card card--6 card--square" href="toothpicks.html">
-  <span class="card__media"><picture><source type="image/webp" srcset="images/shop/toothpicks-640.webp 640w, images/shop/toothpicks-1100.webp 1100w, images/shop/toothpicks-1205.webp 1205w" sizes="(min-width: 900px) 40vw, 100vw"><img src="images/shop/toothpicks.jpg" alt="Twisted metal toothpicks laid on weathered wood between two leather sleeves stamped West Hill Trading Post." width="1205" height="1306" loading="lazy" decoding="async"></picture></span>
-  <span class="card__meta">
-    <span class="card__name">Toothpicks</span>
-    <span class="card__price">Inquire</span>
-    <span class="card__metal">Twisted metal, leather sleeve</span>
-  </span>
-</a>
-
-<a class="card card--6 card--square" href="bandanas.html">
-  <span class="card__media"><picture><source type="image/webp" srcset="images/shop/bandana-red-640.webp 640w, images/shop/bandana-red-1100.webp 1100w, images/shop/bandana-red-1400.webp 1400w" sizes="(min-width: 900px) 40vw, 100vw"><img src="images/shop/bandana-red.jpg" alt="The red West Hill Trading Post paisley bandana print." width="1400" height="1400" loading="lazy" decoding="async"></picture></span>
-  <span class="card__meta">
-    <span class="card__name">Bandanas</span>
-    <span class="card__price">In stock</span>
-    <span class="card__metal">Paisley, red and black</span>
-  </span>
-</a>
-
-</div>
+  <!-- MORE MAKERS -->
+  <section class="catrow" id="more">
+    <div class="catrow__head"><h2>More makers</h2><span>The Open Bench</span></div>
+    <div class="catrow__intro">
+      <p>
+        Two pieces by one maker is where this starts, not where it stops. We are
+        quietly looking for a small number of artisans to set up alongside Russ, each
+        keeping their own name and their own mark. If that is you, write to us.
+      </p>
+      <p><a class="readmore" href="open-bench.html"><span>How it works</span></a></p>
+    </div>
+  </section>
 
 </main>
 
 <footer class="footer">
-  <div class="footer__logo">
-    <picture><source type="image/webp" srcset="images/shop/logo-sunset-640.webp 640w, images/shop/logo-sunset-1100.webp 1100w, images/shop/logo-sunset-1146.webp 1146w" sizes="100vw"><img src="images/shop/logo-sunset.jpg" alt="West Hill Trading Post wordmark on a pale desert sky." width="1146" height="418" loading="lazy" decoding="async"></picture>
-  </div>
-  <div class="footer__grid">
-    <div class="footer__brand">
-      <h2>West Hill</h2>
-      <p>Hand-forged cuffs and a few small goods. Est. 2024, Texas. Russ Snyder at the bench.</p>
-      <a class="mail" href="mailto:russ@westhilltradingpost.com">russ@westhilltradingpost.com</a>
-    </div>
-    <div>
-      <h2>The bench</h2>
+  <div class="footer__inner">
+    <div class="footer__col">
+      <h4 class="footer__title">Service</h4>
       <ul>
-    <li><a href="collection.html">Cuffs</a></li>
-    <li><a href="about.html">The maker</a></li>
-    <li><a href="worn-by.html">Worn by</a></li>
-    <li><a href="open-bench.html">The Open Bench</a></li>
-    </ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="open-bench.html">The Open Bench</a></li>
+        <li><a href="contact.html#shipping">Shipping &amp; Delivery</a></li>
+        <li><a href="contact.html#returns">Returns</a></li>
+        <li><a href="contact.html#repairs">Repairs &amp; Care</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
     </div>
-    <div>
-      <h2>Care</h2>
+    <div class="footer__col">
+      <h4 class="footer__title">Follow</h4>
+      <ul class="social-list">
+        <li><a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9"/></svg></span><span class="social-list__name">Instagram<span class="social-list__handle">@westhilltradingpost</span></span></a></li>
+        <li><a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span><span class="social-list__name">TikTok<span class="social-list__handle">@westhilltradingpost</span></span></a></li>
+        <li><a href="https://www.tiktok.com/@.mr.snyder" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span><span class="social-list__name">TikTok<span class="social-list__handle">@.mr.snyder</span></span></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 20.9v-7.9h2.7l.4-3h-3.1V8.1c0-.9.3-1.4 1.5-1.4h1.7V4.05a21 21 0 0 0-2.6-.15c-2.6 0-4.3 1.6-4.3 4.4V10H7.3v3H10v7.9"/></svg></span><span class="social-list__name">Facebook<span class="social-list__handle">West Hill Trading Post</span></span></a></li>
+      </ul>
       <ul>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="contact.html#shipping">Shipping</a></li>
-    <li><a href="contact.html#returns">Returns</a></li>
-    <li><a href="contact.html#repairs">Repairs</a></li>
-    </ul>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
     </div>
-    <div>
-      <h2>Follow</h2>
-      <ul><li><a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener noreferrer">Instagram · @westhilltradingpost</a></li><li><a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener noreferrer">TikTok · @westhilltradingpost</a></li><li><a href="https://www.tiktok.com/@.mr.snyder" target="_blank" rel="noopener noreferrer">TikTok · @.mr.snyder</a></li><li><a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener noreferrer">Facebook · West Hill Trading Post</a></li></ul>
+    <div class="footer__col">
+      <h4 class="footer__title">Country &amp; Currency</h4>
+      <div class="selects">
+        <label class="sr-only" for="country">Country</label>
+        <select id="country">
+          <option>United States (USD $)</option>
+          <option>Canada (CAD $)</option>
+          <option>United Kingdom (GBP £)</option>
+          <option>Germany (EUR €)</option>
+        </select>
+        <label class="sr-only" for="lang">Language</label>
+        <select id="lang"><option>English</option><option>Deutsch</option><option>Français</option></select>
+      </div>
     </div>
   </div>
-  <p class="footer__legal">© <span id="year">2026</span> West Hill Trading Post · Est. 2024 ★ Texas</p>
+  <p class="footer__legal">© <span id="year">2026</span> West Hill Trading Post. All rights reserved.</p>
 </footer>
-<script src="script.js"></script>
 
+<script src="script.js"></script>
 </body>
 </html>
