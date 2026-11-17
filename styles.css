@@ -334,6 +334,9 @@ h1,h2,h3,h4{
 .grid--4{grid-template-columns:repeat(4,1fr)}
 .grid--2{grid-template-columns:repeat(2,1fr)}
 .grid--2 .tile{aspect-ratio:4/3}
+.grid--3{grid-template-columns:repeat(3,1fr)}
+.grid--3 .tile{aspect-ratio:3/4}
+@media (max-width:640px){.grid--3{grid-template-columns:1fr}.grid--3 .tile{aspect-ratio:4/5}}
 /* keeps an aspect-ratio child from forcing a column wider than its 1fr track */
 .grid>*{min-width:0}
 
