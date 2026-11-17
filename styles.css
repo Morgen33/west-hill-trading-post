@@ -21,6 +21,8 @@
   --header: 74px;
   --gutter: clamp(18px, 3.6vw, 52px);
   --ease: cubic-bezier(.2, .7, .2, 1);
+  /* Site mark. Swap to logos/logo-a.svg or logos/logo-c.svg. */
+  --mark: url("logos/logo-b.svg");
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -65,21 +67,12 @@ p { margin: 0; }
   background: var(--ink);
   border-bottom: 1px solid var(--line);
 }
-.logo { display: grid; line-height: 1; }
-.logo__name {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: 22px;
-  letter-spacing: 0.01em;
-}
-.logo__sub {
-  margin-top: 3px;
-  font-family: var(--cond);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.34em;
-  text-transform: uppercase;
-  color: var(--copper-2);
+.logo {
+  display: block;
+  width: 186px;
+  height: 54px;
+  flex: none;
+  background: var(--mark) left center / contain no-repeat;
 }
 .nav { display: flex; gap: 26px; margin-left: auto; }
 .nav a, .drawer a {
@@ -316,17 +309,25 @@ body.home .site-header.is-solid {
 .rail::-webkit-scrollbar-thumb { background: var(--copper); }
 .rail__card {
   flex: 0 0 min(78vw, 420px);
+  min-width: 0;
   scroll-snap-align: start;
   color: inherit;
 }
 .rail__card--wide { flex-basis: min(88vw, 560px); }
 .rail__media {
+  position: relative;
   height: min(64vh, 560px);
   background: var(--paper-2);
-  display: grid; place-items: center;
   overflow: hidden;
 }
-.rail__media img { max-width: 100%; max-height: 100%; width: auto; height: auto; }
+.rail__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
 .rail__meta { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding-top: 12px; }
 .rail__index {
   grid-column: 1 / -1;
@@ -461,17 +462,31 @@ body.home .site-header.is-solid {
 /* goods */
 .goods {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   background: var(--paper);
   color: var(--ink);
 }
-.goods a { color: inherit; display: grid; grid-template-rows: auto 1fr; }
+.goods a {
+  color: inherit;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  overflow: hidden;
+}
 .goods__media {
+  position: relative;
   background: var(--paper-2);
   aspect-ratio: 1 / 1;
-  display: grid; place-items: center;
+  overflow: hidden;
 }
-.goods__media img { width: 100%; height: 100%; object-fit: contain; }
+.goods__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
 .goods__meta { padding: 18px var(--gutter) 36px; display: grid; gap: 6px; }
 .goods__meta h2 { font-size: 36px; font-weight: 400; }
 .goods__meta p { color: var(--muted-2); max-width: 36ch; }
@@ -496,7 +511,12 @@ body.home .site-header.is-solid {
 
 /* footer */
 .footer { background: var(--ink); border-top: 1px solid var(--line); color: var(--cream); }
-.footer__logo img { width: 100%; height: min(28vw, 240px); object-fit: cover; object-position: center; }
+.footer__logo {
+  width: min(520px, calc(100% - 2 * var(--gutter)));
+  height: 148px;
+  margin: 36px auto 4px;
+  background: var(--mark) center / contain no-repeat;
+}
 .footer__grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1fr;
@@ -578,26 +598,33 @@ body.home .site-header.is-solid {
 
 .bento {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 28px 18px;
   padding: 36px var(--gutter) 80px;
   background: var(--paper);
   color: var(--ink);
 }
-.card { grid-column: span 4; color: inherit; display: flex; flex-direction: column; }
+.card { grid-column: span 4; min-width: 0; color: inherit; display: flex; flex-direction: column; overflow: hidden; }
 .card--8 { grid-column: span 8; }
 .card--6 { grid-column: span 6; }
 .card--12 { grid-column: span 12; }
 .card__media {
+  position: relative;
   background: var(--paper-2);
-  display: grid; place-items: center;
   min-height: 280px;
   aspect-ratio: 4 / 5;
   overflow: hidden;
 }
 .card--8 .card__media, .card--land .card__media { aspect-ratio: 5 / 4; }
 .card--square .card__media { aspect-ratio: 1 / 1; }
-.card__media img { width: 100%; height: 100%; object-fit: contain; }
+.card__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
 .card__meta { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding-top: 12px; }
 .card__name {
   font-family: var(--serif);
@@ -697,10 +724,17 @@ body.home .site-header.is-solid {
   padding: 28px var(--gutter) 64px;
 }
 .more h2 { font-weight: 300; font-size: 32px; margin-bottom: 16px; }
-.more__row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.more a { color: inherit; }
-.more__media { background: #2a221b; aspect-ratio: 1; display: grid; place-items: center; }
-.more__media img { width: 100%; height: 100%; object-fit: contain; }
+.more__row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.more a { color: inherit; min-width: 0; overflow: hidden; }
+.more__media { position: relative; background: #2a221b; aspect-ratio: 1; overflow: hidden; }
+.more__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
 .more strong { display: block; margin-top: 8px; font-family: var(--serif); font-weight: 500; font-size: 20px; }
 .more em { font-style: normal; color: var(--copper-2); font-family: var(--cond); letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px; }
 
@@ -867,13 +901,15 @@ body.home .site-header.is-solid {
   .goods a + a { border-left: 0; border-top: 1px solid var(--line-ink); }
   .pair { grid-template-columns: 1fr; }
   .header__write { display: none; }
-  .footer__logo img { height: 140px; }
+  .footer__logo { height: 120px; }
 }
 
 @media (max-width: 800px) {
   .hero__film { object-fit: contain; object-position: center; }
 }
 @media (max-width: 640px) {
+  .logo { width: 148px; height: 46px; }
+  .footer__logo { height: 108px; margin-top: 28px; }
   .rail__card, .rail__card--wide { flex-basis: 86vw; }
   .bento { gap: 22px 0; }
   .card__media { min-height: 0; }

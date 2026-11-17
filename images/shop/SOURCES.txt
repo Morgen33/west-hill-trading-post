@@ -17,7 +17,7 @@ Nothing here was recolored, redrawn, or regenerated. Resizes are WebP and JPEG o
 38  sundown-desert    Home hero. Also a Sundown page view.
 39  cactus            Home "Outside" block. Copper and stainless.
 40  levi-cactus       Levi page.
-41  logo-sunset       Footer wordmark. Brand art, not a product.
+41  logo-sunset       Brand art, not a product. Not used on the page. The footer mark is logos/logo-b.svg.
 42  shotgun           Home finish block.
 53  texas             Texas cuff card and page.
 
