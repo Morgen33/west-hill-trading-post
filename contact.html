@@ -3,104 +3,227 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Customer Care — West Hill Trading Post</title>
-<meta name="description" content="Write to Russ Snyder about orders, shipping, returns, and repairs. West Hill Trading Post works by letter. There is no storefront.">
-<meta name="theme-color" content="#14110e">
-<meta property="og:title" content="Customer Care — West Hill Trading Post">
-<meta property="og:description" content="Write to Russ Snyder about orders, shipping, returns, and repairs. West Hill Trading Post works by letter. There is no storefront.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/shop/sundown-desert.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Customer Care — WEST HILL TRADING POST</title>
+<meta name="description" content="Reach Russ Snyder about orders, shipping, returns and repairs. West Hill Trading Post works online; there is no storefront.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300;1,9..144,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
 
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <a class="logo" href="index.html" aria-label="West Hill Trading Post, home">
-    <span class="logo__name">West Hill</span>
-    <span class="logo__sub">Trading Post</span>
-  </a>
-  <nav class="nav" aria-label="Main"><a href="collection.html">Cuffs</a><a href="about.html">Maker</a><a href="worn-by.html">Worn by</a><a href="contact.html" aria-current="page">Care</a></nav>
-  <a class="header__write" href="mailto:russ@westhilltradingpost.com">Write to order</a>
-  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="drawer">
-    <span></span><span></span><span class="sr-only">Menu</span>
-  </button>
+
+<header class="header" id="header">
+  <div class="header__bar">
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-collection">Collection <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--md" id="menu-collection">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="collection.html#bracelets">Bracelets</a></li>
+                <li><a href="collection.html#bandanas">Bandanas</a></li>
+                <li><a href="open-bench.html">The Open Bench</a></li>
+              </ul>
+              <div class="megamenu__feature">
+                <div class="media media--menu"></div>
+                <p class="megamenu__caption">Bracelets &amp; bandanas by Russ Snyder</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-about">About <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--sm" id="menu-about">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="about.html#makers">The Maker</a></li>
+                <li><a href="about.html#materials">Materials</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item has-menu">
+          <button class="nav__link nav__toggle" aria-expanded="false" aria-controls="menu-care">Customer Care <span class="caret" aria-hidden="true"></span></button>
+          <div class="megamenu megamenu--sm" id="menu-care">
+            <div class="megamenu__inner">
+              <ul class="megamenu__col">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html#shipping">Shipping</a></li>
+                <li><a href="contact.html#returns">Returns</a></li>
+                <li><a href="contact.html#repairs">Repairs &amp; Care</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="brand">
+      <a class="logo" href="index.html" aria-label="West Hill Trading Post — home">
+        <span class="logo__line">WEST HILL<span class="logo__dot">:</span>TRADING POST</span>
+        <span class="logo__rule" aria-hidden="true"></span>
+      </a>
+      <nav class="social social--head" aria-label="Social">
+        <a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener" aria-label="West Hill Trading Post on Instagram"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9"/></svg></span></a>
+        <a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener" aria-label="West Hill Trading Post on TikTok"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span></a>
+        <a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener" aria-label="West Hill Trading Post on Facebook"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 20.9v-7.9h2.7l.4-3h-3.1V8.1c0-.9.3-1.4 1.5-1.4h1.7V4.05a21 21 0 0 0-2.6-.15c-2.6 0-4.3 1.6-4.3 4.4V10H7.3v3H10v7.9"/></svg></span></a>
+      </nav>
+    </div>
+
+    <div class="utils">
+      <button class="utils__lang" type="button">EN</button>
+      <button class="utils__btn" type="button" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+      <a class="utils__btn" href="#" aria-label="Account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.6-4 4.2-6 7.5-6s5.9 2 7.5 6"/></svg></a>
+      <a class="utils__btn" href="#" aria-label="Wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l2.3 4.9 5.2.7-3.8 3.7.9 5.3-4.6-2.5-4.6 2.5.9-5.3L4.5 9.6l5.2-.7z"/></svg></a>
+      <a class="utils__btn" href="collection.html" aria-label="Cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8h13l-1.2 12H6.7z"/><path d="M9 8V6.4A3 3 0 0 1 12 3.4a3 3 0 0 1 3 3V8"/></svg></a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
 </header>
+
 <div class="drawer" id="drawer" hidden>
-  <nav aria-label="Mobile"><a href="collection.html">Cuffs</a><a href="about.html">Maker</a><a href="worn-by.html">Worn by</a><a href="contact.html">Care</a><a href="open-bench.html">Open Bench</a><a href="mailto:russ@westhilltradingpost.com">Write to order</a></nav>
-  <nav class="drawer__social" aria-label="Social"><a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener noreferrer">Instagram · @westhilltradingpost</a><a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener noreferrer">TikTok · @westhilltradingpost</a><a href="https://www.tiktok.com/@.mr.snyder" target="_blank" rel="noopener noreferrer">TikTok · @.mr.snyder</a><a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener noreferrer">Facebook · West Hill Trading Post</a></nav>
+  <nav class="drawer__nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <details><summary>Collection</summary>
+      <a href="collection.html#bracelets">Bracelets</a>
+      <a href="collection.html#bandanas">Bandanas</a>
+      <a href="open-bench.html">The Open Bench</a>
+    </details>
+    <details><summary>About</summary>
+      <a href="about.html">Our Story</a>
+      <a href="about.html#makers">The Maker</a>
+    </details>
+    <details open><summary>Customer Care</summary>
+      <a href="#reach">Contact</a>
+      <a href="#shipping">Shipping</a>
+      <a href="#returns">Returns</a>
+      <a href="#repairs">Repairs &amp; Care</a>
+    </details>
+  </nav>
+  <nav class="social social--head social--drawer" aria-label="Social">
+    <a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener" aria-label="Instagram"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9"/></svg></span></a>
+    <a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener" aria-label="TikTok — West Hill Trading Post"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span></a>
+    <a href="https://www.tiktok.com/@.mr.snyder" target="_blank" rel="noopener" aria-label="TikTok — Russ Snyder"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span></a>
+    <a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener" aria-label="Facebook"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 20.9v-7.9h2.7l.4-3h-3.1V8.1c0-.9.3-1.4 1.5-1.4h1.7V4.05a21 21 0 0 0-2.6-.15c-2.6 0-4.3 1.6-4.3 4.4V10H7.3v3H10v7.9"/></svg></span></a>
+  </nav>
 </div>
 
 <main id="main">
 
-<header class="contact-hero">
-  <p class="eyebrow">Customer care</p>
-  <h1>Write to Russ.</h1>
-  <a class="mail" href="mailto:russ@westhilltradingpost.com">russ@westhilltradingpost.com</a>
-  <p>There is no storefront and no cart. West Hill works by letter. He answers.</p>
-</header>
-<section class="policy">
-  <article id="shipping">
-    <h2>Shipping</h2>
-    <p>Orders leave the bench within two working days. Domestic ground shipping is free over $150. International is quoted when you write, and it goes tracked. Duties sit with the receiver. Anything made to order has its own lead time, and Russ will say so before you commit.</p>
-  </article>
-  <article id="returns">
-    <h2>Returns</h2>
-    <p>Unused goods can come back within 30 days for a full refund, in their original packing. Made-to-order and personalised pieces are final sale. Write first and you will get return instructions the same day.</p>
-  </article>
-  <article id="repairs">
-    <h2>Repairs</h2>
-    <p>Russ will put right anything that carries the mark. Ordinary wear is covered for the first two years. After that, the charge is materials only. Send the piece with a note about what went wrong.</p>
-  </article>
-</section>
-<nav class="follow" aria-label="Social" style="padding-top:28px">
-  <a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> @westhilltradingpost</span></a><a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener noreferrer">TikTok<span class="sr-only"> @westhilltradingpost</span></a><a href="https://www.tiktok.com/@.mr.snyder" target="_blank" rel="noopener noreferrer">TikTok<span class="sr-only"> @.mr.snyder</span></a><a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> West Hill Trading Post</span></a>
-</nav>
+  <section class="pagehead" style="--img:url('images/contact-head.jpg')">
+    <h1>Customer care</h1>
+    <p>Plain dealing, no hurry. Write and Russ will answer.</p>
+  </section>
+
+  <section class="editorial" id="reach">
+    <div class="editorial__media media" style="--img:url('images/contact-shop.jpg')"></div>
+    <div class="editorial__body">
+      <p class="eyebrow">Write to us</p>
+      <h3 class="editorial__title">Get in touch</h3>
+      <p class="editorial__text">
+        There is no storefront. West Hill Trading Post works online and by
+        arrangement. Write to Russ directly and he will answer.
+      </p>
+      <address class="editorial__text">
+        <a href="mailto:russ@westhilltradingpost.com">russ@westhilltradingpost.com</a>
+      </address>
+    </div>
+  </section>
+
+  <div class="prose">
+    <h2 id="shipping">Shipping &amp; delivery</h2>
+    <p>
+      Orders leave the bench within two working days. Domestic ground shipping is free
+      over $150; international is quoted at checkout and sent tracked. Duties are the
+      responsibility of the receiver. Anything made to order carries its own lead time,
+      stated on the product page before you buy.
+    </p>
+
+    <h2 id="returns">Returns</h2>
+    <p>
+      Unused goods can come back within 30 days for a full refund, in their original
+      packing. Made-to-order and personalised pieces are final sale. Write to us first
+      and we will send return instructions the same day.
+    </p>
+
+    <h2 id="repairs">Repairs &amp; care</h2>
+    <p>
+      Russ will put right anything that carries the mark.
+      Ordinary wear is covered for the first two years; after that we charge for
+      materials only. Send the piece with a note describing what went wrong.
+    </p>
+
+  </div>
+
+
+  <!-- ============ FOLLOW ============ -->
+  <section class="follow" id="follow" aria-labelledby="follow-title">
+    <p class="follow__eyebrow">Follow along</p>
+    <h2 class="follow__title" id="follow-title">The bench, day to day</h2>
+    <p class="follow__text">
+      Sparks, work in progress, and finished pieces before they go in the box.
+      Russ posts from the shop and the classroom both.
+    </p>
+    <ul class="follow__list">
+      <li><a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9"/></svg></span><span class="follow__platform">Instagram<span class="follow__handle">@westhilltradingpost</span></span></a></li>
+      <li><a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span><span class="follow__platform">TikTok<span class="follow__handle">@westhilltradingpost</span></span></a></li>
+      <li><a href="https://www.tiktok.com/@.mr.snyder" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span><span class="follow__platform">TikTok<span class="follow__handle">@.mr.snyder</span></span></a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 20.9v-7.9h2.7l.4-3h-3.1V8.1c0-.9.3-1.4 1.5-1.4h1.7V4.05a21 21 0 0 0-2.6-.15c-2.6 0-4.3 1.6-4.3 4.4V10H7.3v3H10v7.9"/></svg></span><span class="follow__platform">Facebook<span class="follow__handle">West Hill Trading Post</span></span></a></li>
+    </ul>
+  </section>
 
 </main>
 
 <footer class="footer">
-  <div class="footer__logo">
-    <picture><source type="image/webp" srcset="images/shop/logo-sunset-640.webp 640w, images/shop/logo-sunset-1100.webp 1100w, images/shop/logo-sunset-1146.webp 1146w" sizes="100vw"><img src="images/shop/logo-sunset.jpg" alt="West Hill Trading Post wordmark on a pale desert sky." width="1146" height="418" loading="lazy" decoding="async"></picture>
-  </div>
-  <div class="footer__grid">
-    <div class="footer__brand">
-      <h2>West Hill</h2>
-      <p>Hand-forged cuffs and a few small goods. Est. 2024, Texas. Russ Snyder at the bench.</p>
-      <a class="mail" href="mailto:russ@westhilltradingpost.com">russ@westhilltradingpost.com</a>
-    </div>
-    <div>
-      <h2>The bench</h2>
+  <div class="footer__inner">
+    <div class="footer__col">
+      <h4 class="footer__title">Service</h4>
       <ul>
-    <li><a href="collection.html">Cuffs</a></li>
-    <li><a href="about.html">The maker</a></li>
-    <li><a href="worn-by.html">Worn by</a></li>
-    <li><a href="open-bench.html">The Open Bench</a></li>
-    </ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="open-bench.html">The Open Bench</a></li>
+        <li><a href="#shipping">Shipping &amp; Delivery</a></li>
+        <li><a href="#returns">Returns</a></li>
+        <li><a href="#repairs">Repairs &amp; Care</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
     </div>
-    <div>
-      <h2>Care</h2>
+    <div class="footer__col">
+      <h4 class="footer__title">Follow</h4>
+      <ul class="social-list">
+        <li><a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9"/></svg></span><span class="social-list__name">Instagram<span class="social-list__handle">@westhilltradingpost</span></span></a></li>
+        <li><a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span><span class="social-list__name">TikTok<span class="social-list__handle">@westhilltradingpost</span></span></a></li>
+        <li><a href="https://www.tiktok.com/@.mr.snyder" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.6v11.1a3.8 3.8 0 1 1-3.3-3.77"/><path d="M14.2 3.6c.35 2.4 2.1 4.1 4.5 4.4"/></svg></span><span class="social-list__name">TikTok<span class="social-list__handle">@.mr.snyder</span></span></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener"><span class="social__icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 20.9v-7.9h2.7l.4-3h-3.1V8.1c0-.9.3-1.4 1.5-1.4h1.7V4.05a21 21 0 0 0-2.6-.15c-2.6 0-4.3 1.6-4.3 4.4V10H7.3v3H10v7.9"/></svg></span><span class="social-list__name">Facebook<span class="social-list__handle">West Hill Trading Post</span></span></a></li>
+      </ul>
       <ul>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="contact.html#shipping">Shipping</a></li>
-    <li><a href="contact.html#returns">Returns</a></li>
-    <li><a href="contact.html#repairs">Repairs</a></li>
-    </ul>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
     </div>
-    <div>
-      <h2>Follow</h2>
-      <ul><li><a href="https://www.instagram.com/westhilltradingpost/" target="_blank" rel="noopener noreferrer">Instagram · @westhilltradingpost</a></li><li><a href="https://www.tiktok.com/@westhilltradingpost" target="_blank" rel="noopener noreferrer">TikTok · @westhilltradingpost</a></li><li><a href="https://www.tiktok.com/@.mr.snyder" target="_blank" rel="noopener noreferrer">TikTok · @.mr.snyder</a></li><li><a href="https://www.facebook.com/profile.php?id=61591486615658" target="_blank" rel="noopener noreferrer">Facebook · West Hill Trading Post</a></li></ul>
+    <div class="footer__col">
+      <h4 class="footer__title">Country &amp; Currency</h4>
+      <div class="selects">
+        <label class="sr-only" for="country">Country</label>
+        <select id="country">
+          <option>United States (USD $)</option>
+          <option>Canada (CAD $)</option>
+          <option>United Kingdom (GBP £)</option>
+          <option>Germany (EUR €)</option>
+        </select>
+        <label class="sr-only" for="lang">Language</label>
+        <select id="lang"><option>English</option><option>Deutsch</option><option>Français</option></select>
+      </div>
     </div>
   </div>
-  <p class="footer__legal">© <span id="year">2026</span> West Hill Trading Post · Est. 2024 ★ Texas</p>
+  <p class="footer__legal">© <span id="year">2026</span> West Hill Trading Post. All rights reserved.</p>
 </footer>
-<script src="script.js"></script>
 
+<script src="script.js"></script>
 </body>
 </html>
